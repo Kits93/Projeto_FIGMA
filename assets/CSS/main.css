@@ -1,0 +1,68 @@
+:root{
+    --primary-color: #65768C50;
+    --secondary-color: #F28907;
+    --tertiary-color: #F27507;
+    --quatenary-color: #F25D07;
+    --quinary-color: #D93F07;
+    --dark-color: black;
+    --light-color: white;
+    --grayscale: #d9d9d9;
+    --title-color: #1362A8;
+}
+
+.left-side,
+.right-side{
+    /* altura 100% - vertical height */
+    height: 100vh;
+    /* ocultar a barra de rolagem */
+    overflow: hidden;
+}
+
+.left-side{
+    background: var(--tertiary-color);
+    background: linear-gradient(180deg, var(--tertiary-color) 0%, var(--quinary-color) 100%);
+}
+
+.left-side__brand{
+    width: 268px;
+    height: 268px;
+}
+
+.right-side__title{
+    color: var(--title-color);
+    font-size: 106px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.right-side__label{
+    font-size: 18px;
+    color: var(--quinary-color);
+}
+
+.right-side input{
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.right-side__button{
+    background: var(--quinary-color);
+    border-radius: 10px;
+}
+
+.right-side__remember-pass{
+    color: #0066FF;
+    text-align: center;
+}
+
+@media(max-width: 768px){
+    .left-side{
+        height: 200px;
+    }
+    .left-side__brand{
+        height: 135px;
+    }
+    .right-side__title{
+        font-size: 60px;
+        margin-top: -200px;
+    }
+}
